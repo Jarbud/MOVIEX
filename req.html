@@ -9,6 +9,27 @@
     <script src="https://kit.fontawesome.com/42e5ce52b7.js" crossorigin="anonymous"></script>
     <title>Movie X</title>
 </head>
+<script>
+    function dicek()
+      {
+             var teks=document.req.email.value;
+             var at=teks.indexOf("@");
+             var dot=teks.lastIndexOf(".");
+             if (at<0)
+             {
+	alert("EMAIL SALAH !");
+             }
+             else if (dot<0)
+             {
+	alert("EMAIL TIDAK LENGKAP !");
+              }
+              else
+              {
+	alert("EMAIL OK !");
+               }
+        }
+
+</script>
 <body>
     <div class="home-tbl-container">
         <table width="60%" class="home-tbl">
@@ -23,7 +44,7 @@
     </div>
     <div class="home-nowplaying-container" style="height: 535px;">
         <div class="home-nowplaying-title" style="width: 338px;">Request Movies</div>
-        <form action="" method="get">
+        <form name="req" action="" method="get">
             <table class="table-req" style="color: white;">
                 <tr>
                     <td style="padding-bottom: 10px;"><label for="email">Email :</label></td>
@@ -49,7 +70,7 @@
                         <input id="ck3" name="ck3" type="checkbox" value="HD"><label for="ck3">HD</label></td>
                 </tr>
                 <tr>
-                    <td colspan="2"><button class="home-btn" style="float: right;" type="submit">Kirim</button></td>
+                    <td colspan="2"><button onclick="dicek()" class="home-btn" style="float: right;" type="submit">Kirim</button></td>
                 </tr>
             </table>
         </form>

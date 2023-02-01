@@ -6,50 +6,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="img/logo.png" type="image/icon type">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/navbar.css">
     <script src="https://kit.fontawesome.com/42e5ce52b7.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="js/script.js"></script>
     <title>Movie X</title>
 </head>
 <body>
-    <div class="home-tbl-container">
-        <table width="60%" class="home-tbl">
-            <tr>
-                <td><a class="home-menu" href="index.html">Home</a></td>
-                <td><a class="home-menu" href="movies.html">Movies</a></td>
-                <td><a class="home-menu" href="req.html">Request Movie</a></td>
-                <td><a class="home-menu" href="about.html">About Us</a></td>
-                <td><a class="home-menu" href="contact.html">Contact Us</a></td>
-            </tr>
-        </table>
-    </div>
+    <header>
+        <nav>
+           <div class="menu-icon">
+              <i class="fa fa-bars fa-2x"></i>
+           </div>
+           <div class="logo">
+              MOVIE X
+           </div>
+           <div class="menu">
+              <ul>
+                 <li><a href="index.html">Home</a></li>
+                 <li><a href="movies.html">Movies</a></li>
+                 <li><a href="req.html">Request Movie</a></li>
+                 <li><a href="about.html">About Us</a></li>
+                 <li><a href="contact.html">Contact Us</a></li>
+              </ul>
+           </div>
+        </nav>
+     </header>
     <div class="home-nowplaying-container">
-        <div class="home-nowplaying-title" style="width: 385px;">Upcoming Movies</div>
+        <div class="home-nowplaying-title" style="width: 426px;">Upcoming Movies</div>
         <div class="home-npcard-container">
-            <div class="home-npcard">
-                <img src="img/poster1.jpg" width="100%" height="100%">
-            </div>
-            <div class="home-npcard">
-                <img src="img/poster2.jpg" width="100%" height="100%">
-            </div>
-            <div class="home-npcard">
-                <img src="img/poster3.jpg" width="100%" height="100%">
-            </div>
-            <div class="home-npcard">
-                <img src="img/poster4.jpg" width="100%" height="100%">
+            <div class="row">
+                <div class="col-lg-3">
+                    <a href="detail.html">
+                        <div class="home-npcard">
+                            <img src="img/poster1.jpg" width="100%" height="100%">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3">
+                    <a href="detail.html">
+                        <div class="home-npcard">
+                            <img src="img/poster3.jpg" width="100%" height="100%">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3">
+                    <a href="detail.html">
+                        <div class="home-npcard">
+                            <img src="img/poster4.jpg" width="100%" height="100%">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3">
+                    <a href="detail.html">
+                        <div class="home-npcard">
+                            <img src="img/poster5.jpg" width="100%" height="100%">
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
-        <div class="home-nowplaying-title" style="width: 271px;">Now Playing</div>
+        <div class="home-nowplaying-title" style="width: 298px;">Now Playing</div>
         <div class="home-npcard-container">
-            <div class="home-npcard">
-                <img src="img/poster1.jpg" width="100%" height="100%">
-            </div>
-            <div class="home-npcard">
-                <img src="img/poster2.jpg" width="100%" height="100%">
-            </div>
-            <div class="home-npcard">
-                <img src="img/poster3.jpg" width="100%" height="100%">
-            </div>
-            <div class="home-npcard">
-                <img src="img/poster4.jpg" width="100%" height="100%">
+            <div class="row">
+                <div class="col-lg-3">
+                    <a href="detail.html">
+                        <div class="home-npcard">
+                            <img src="img/poster1.jpg" width="100%" height="100%">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3">
+                    <a href="detail.html">
+                        <div class="home-npcard">
+                            <img src="img/poster3.jpg" width="100%" height="100%">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3">
+                    <a href="detail.html">
+                        <div class="home-npcard">
+                            <img src="img/poster4.jpg" width="100%" height="100%">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3">
+                    <a href="detail.html">
+                        <div class="home-npcard">
+                            <img src="img/poster5.jpg" width="100%" height="100%">
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
